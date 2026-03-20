@@ -5,10 +5,12 @@ export default function Projects() {
 
     return (
         <div>
+            <h1>Projects</h1>
             {projects.map((project) => {
-                return <div key={project.id}>
-                    <ProjectCard project={project} />
-                </div>
+                return (
+                    <ProjectCard
+                        key={project.id}
+                        project={project} />)
             })}
         </div>
     )
