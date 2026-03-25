@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 export default function Projects() {
 
     return (
-        <div id="projects">
+        <div className="projects-section" id="projects">
             <h1>Projects</h1>
             {projects.map((project) => {
                 return (

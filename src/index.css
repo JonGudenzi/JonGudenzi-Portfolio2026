@@ -10,22 +10,28 @@
 
 body {
   margin: 0;
+  background-color: #111827;
 }
 
 #root {
   max-width: 900px;
   margin: 0 auto;
   padding: 24px;
+  background-color: #0b1220;
+  min-height: 100vh;
 }
 
 h1,
 h2,
 h3 {
   margin-top: 0;
+  color: #f9fafb;
 }
 
 p {
-  line-height: 1.6;
+  line-height: 1.7;
+  margin-bottom: 16px;
+  color: #d1d5db;
 }
 
 a {
@@ -42,15 +48,46 @@ section {
 }
 
 .header-text {
-  margin-bottom: 32px;
+  margin: 0 auto 48px;
+  max-width: 700px;
+}
+
+.header-text h1 {
+  font-size: 52px;
+  margin-bottom: 8px;
+}
+
+.header-text h2,
+.header-text h3 {
+  margin-bottom: 16px;
+  color: #d1d5db;
 }
 
 .about-me {
-  margin-bottom: 32px;
+  margin: 0 auto 48px;
+  max-width: 700px;
 }
 
 .project-content {
+  background-color: #111827;
+  border: 1px solid #374151;
+  border-radius: 12px;
+  padding: 24px;
   margin-bottom: 24px;
+}
+
+.project-content a {
+  margin-right: 16px;
+  font-weight: 500;
+}
+
+.project-content h2 {
+  margin-bottom: 12px;
+}
+
+.projects-section {
+  margin: 0 auto 48px;
+  max-width: 700px;
 }
 
 .project-text {
@@ -58,9 +95,24 @@ section {
 }
 
 .navBar {
-  margin: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #333;
 }
 
-.navText {
-  margin-right: 25px;
+.navLinks {
+  display: flex;
+  gap: 32px;
+}
+
+.navBar a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 18px;
+}
+
+.navBar a:hover {
+  text-decoration: underline;
 }
